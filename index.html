@@ -3,64 +3,43 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Walpex Group</title>
 
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-html{
-scroll-behavior:smooth;
-}
-
-body{
-font-family:Arial,Helvetica,sans-serif;
-color:#222;
-background:#fff;
-line-height:1.6;
-}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:Arial,Helvetica,sans-serif;color:#222;background:#fff;line-height:1.6;}
 
 header{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-background:#fff;
-box-shadow:0 2px 10px rgba(0,0,0,.08);
+position:fixed;top:0;left:0;width:100%;
+background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.08);
 z-index:1000;
 }
 
 .nav{
-max-width:1200px;
-margin:auto;
-display:flex;
-justify-content:space-between;
-align-items:center;
+max-width:1200px;margin:auto;
+display:flex;justify-content:space-between;align-items:center;
 padding:18px 20px;
 }
 
-.logo{
-font-size:30px;
-font-weight:700;
-color:#0b4ea2;
-}
+.logo{display:flex;align-items:center;}
 
 nav a{
-margin-left:30px;
-text-decoration:none;
-color:#0b2d5c;
-font-weight:600;
-transition:.3s;
+margin-left:30px;text-decoration:none;
+color:#0b2d5c;font-weight:600;transition:.3s;
 }
 
-nav a:hover{
-color:#1976ff;
+nav a:hover{color:#1976ff;}
+
+.contact-btn{
+background:#1976ff;
+color:white!important;
+padding:12px 22px;
+border-radius:8px;
+margin-left:35px;
 }
+
+.contact-btn:hover{background:#0059d6;}
 
 .hero{
 height:100vh;
@@ -69,26 +48,15 @@ linear-gradient(rgba(0,40,90,.55),rgba(0,40,90,.55)),
 url('hero-banner.jpg');
 background-size:cover;
 background-position:center;
-display:flex;
-align-items:center;
+display:flex;align-items:center;
 padding:0 10%;
 color:#fff;
 }
 
-.hero-content{
-max-width:650px;
-}
+.hero-content{max-width:650px;}
 
-.hero h1{
-font-size:68px;
-margin-bottom:20px;
-}
-
-.hero p{
-font-size:24px;
-margin-bottom:35px;
-line-height:1.5;
-}
+.hero h1{font-size:68px;margin-bottom:20px;}
+.hero p{font-size:24px;margin-bottom:35px;line-height:1.5;}
 
 .btn{
 display:inline-block;
@@ -98,35 +66,16 @@ color:#fff;
 text-decoration:none;
 border-radius:8px;
 font-weight:700;
-transition:.3s;
 }
 
-.btn:hover{
-background:#0059d6;
-}
-
-.section{
-max-width:1200px;
-margin:auto;
-padding:100px 20px;
-}
-
-.section-title{
-font-size:42px;
-color:#0b2d5c;
-margin-bottom:25px;
-text-align:center;
-}
+.section{max-width:1200px;margin:auto;padding:100px 20px;}
+.section-title{font-size:42px;color:#0b2d5c;margin-bottom:25px;text-align:center;}
 
 .about{
 display:grid;
 grid-template-columns:1fr 1fr;
 gap:60px;
 align-items:center;
-}
-
-.about-text p{
-font-size:18px;
 }
 
 .cards{
@@ -142,28 +91,11 @@ border-radius:14px;
 padding:35px;
 box-shadow:0 5px 20px rgba(0,0,0,.08);
 text-align:center;
-transition:.3s;
 }
 
-.card:hover{
-transform:translateY(-8px);
-}
+.card span{font-size:48px;display:block;margin-bottom:15px;}
 
-.card span{
-font-size:48px;
-display:block;
-margin-bottom:15px;
-}
-
-.card h3{
-margin-bottom:15px;
-color:#0b2d5c;
-}
-
-.contact-section{
-background:#0d2b56;
-color:#fff;
-}
+.contact-section{background:#0d2b56;color:#fff;}
 
 .contact-grid{
 display:grid;
@@ -174,15 +106,18 @@ margin-top:50px;
 
 .contact-box{
 text-align:center;
-padding:30px;
-background:rgba(255,255,255,.08);
-border-radius:12px;
+padding:35px;
+background:rgba(255,255,255,.10);
+border-radius:14px;
+transition:.3s;
 }
 
-.contact-box a{
-color:#fff;
-text-decoration:none;
+.contact-box:hover{
+transform:translateY(-5px);
+background:rgba(255,255,255,.14);
 }
+
+.contact-box a{color:#fff;text-decoration:none;}
 
 footer{
 background:#071a35;
@@ -192,64 +127,28 @@ padding:30px;
 }
 
 @media(max-width:900px){
-
-.hero h1{
-font-size:42px;
-}
-
-.hero p{
-font-size:20px;
-}
-
-.about{
-grid-template-columns:1fr;
-}
-
-.cards{
-grid-template-columns:1fr 1fr;
-}
-
-.contact-grid{
-grid-template-columns:1fr;
-}
-
-nav{
-display:none;
-}
-
+.about{grid-template-columns:1fr;}
+.cards{grid-template-columns:1fr 1fr;}
+.contact-grid{grid-template-columns:1fr;}
+nav{display:none;}
+.hero h1{font-size:42px;}
+.hero p{font-size:20px;}
 }
 
 @media(max-width:600px){
-
-.cards{
-grid-template-columns:1fr;
+.cards{grid-template-columns:1fr;}
+.hero h1{font-size:34px;}
 }
-
-.hero{
-padding:0 30px;
-}
-
-.hero h1{
-font-size:34px;
-}
-
-.hero p{
-font-size:18px;
-}
-
-}
-
 </style>
 </head>
 
 <body>
 
 <header>
-
 <div class="nav">
 
 <div class="logo">
-WALPEX GROUP
+<img src="logo-wpa.png" alt="WPA Logo" style="height:55px;">
 </div>
 
 <nav>
@@ -257,154 +156,58 @@ WALPEX GROUP
 <a href="#about">About Us</a>
 <a href="#activities">Our Activities</a>
 <a href="#contact">Contact</a>
+<a href="mailto:info@walpexgroup.com" class="contact-btn">Contact Us</a>
 </nav>
 
 </div>
-
 </header>
 
 <section class="hero" id="home">
-
 <div class="hero-content">
-
 <h1>WALPEX GROUP</h1>
-
-<p>
-Global Vision. Reliable Solutions.
-</p>
-
-<p>
-Walpex Group is committed to delivering high-quality solutions,
-building strong partnerships and supporting sustainable growth
-through professionalism, innovation and trust.
-</p>
-
-<a href="#about" class="btn">
-Learn More
-</a>
-
+<p>Global Vision. Reliable Solutions.</p>
+<p>Walpex Group is committed to delivering high-quality solutions, building strong partnerships and supporting sustainable growth through professionalism, innovation and trust.</p>
+<a href="#about" class="btn">Learn More</a>
 </div>
-
 </section>
 
 <section class="section" id="about">
-
-<h2 class="section-title">
-About Us
-</h2>
-
+<h2 class="section-title">About Us</h2>
 <div class="about">
-
-<div class="about-text">
-
-<p>
-Walpex Group operates with a strong foundation of trust,
-transparency and long-term commitment.
-We work with partners worldwide to support sustainable
-business development and create lasting value.
-</p>
-
-<br>
-
-<p>
-Our mission is to deliver reliable solutions,
-maintain strong business relationships and
-support responsible growth in international markets.
-</p>
-
-</div>
-
 <div>
-<img src="hero-banner.jpg"
-style="width:100%;border-radius:15px;">
+<p>Walpex Group operates with a strong foundation of trust, transparency and long-term commitment. We work with partners worldwide to support sustainable business development and create lasting value.</p><br>
+<p>Our mission is to deliver reliable solutions, maintain strong business relationships and support responsible growth in international markets.</p>
 </div>
-
+<div><img src="hero-banner.jpg" style="width:100%;border-radius:15px;"></div>
 </div>
-
 </section>
 
 <section class="section" id="activities">
-
-<h2 class="section-title">
-Our Activities
-</h2>
-
+<h2 class="section-title">Our Activities</h2>
 <div class="cards">
-
-<div class="card">
-<span>🌎</span>
-<h3>Global Approach</h3>
-<p>
-Delivering scalable solutions across international markets.
-</p>
+<div class="card"><span>🌎</span><h3>Global Approach</h3><p>Delivering scalable solutions across international markets.</p></div>
+<div class="card"><span>🛡️</span><h3>Reliability</h3><p>Commitment to quality, responsibility and professionalism.</p></div>
+<div class="card"><span>🤝</span><h3>Partnership</h3><p>Building strong and lasting relationships with partners.</p></div>
+<div class="card"><span>📈</span><h3>Sustainable Growth</h3><p>Creating long-term value through innovation and development.</p></div>
 </div>
-
-<div class="card">
-<span>🛡️</span>
-<h3>Reliability</h3>
-<p>
-Commitment to quality, responsibility and professionalism.
-</p>
-</div>
-
-<div class="card">
-<span>🤝</span>
-<h3>Partnership</h3>
-<p>
-Building strong and lasting relationships with partners.
-</p>
-</div>
-
-<div class="card">
-<span>📈</span>
-<h3>Sustainable Growth</h3>
-<p>
-Creating long-term value through innovation and development.
-</p>
-</div>
-
-</div>
-
 </section>
 
 <section class="section contact-section" id="contact">
-
-<h2 class="section-title" style="color:white;">
-Contact
-</h2>
-
+<h2 class="section-title" style="color:white;">Contact</h2>
 <div class="contact-grid">
-
-<div class="contact-box">
-<h3>Email</h3>
-<br>
-<a href="mailto:info@walpexgroup.com">
-info@walpexgroup.com
-</a>
+<div class="contact-box"><h3>Email</h3><br><a href="mailto:info@walpexgroup.com">info@walpexgroup.com</a></div>
+<div class="contact-box"><h3>Support</h3><br><a href="mailto:support@walpexgroup.com">support@walpexgroup.com</a></div>
+<div class="contact-box"><h3>Website</h3><br><a href="https://walpexgroup.com">walpexgroup.com</a></div>
 </div>
-
-<div class="contact-box">
-<h3>Support</h3>
-<br>
-<a href="mailto:support@walpexgroup.com">
-support@walpexgroup.com
-</a>
-</div>
-
-<div class="contact-box">
-<h3>Website</h3>
-<br>
-<a href="https://walpexgroup.com">
-walpexgroup.com
-</a>
-</div>
-
-</div>
-
 </section>
 
 <footer>
-© 2026 Walpex Group. All Rights Reserved.
+<p>© 2026 Walpex Group. All Rights Reserved.</p><br>
+<p>
+<a href="#" style="color:white;margin:0 10px;">LinkedIn</a>
+<a href="#" style="color:white;margin:0 10px;">Facebook</a>
+<a href="#" style="color:white;margin:0 10px;">Instagram</a>
+</p>
 </footer>
 
 </body>
