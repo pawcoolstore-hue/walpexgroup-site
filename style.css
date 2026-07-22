@@ -710,3 +710,36 @@ transform:translateY(35px) scale(1.15);
     color:#8e98ab;
     font-size:15px;
 }
+.form-success {
+    background: #e8f8ed;
+    color: #146c2e;
+    border: 1px solid #8fd19e;
+    padding: 18px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    animation: fadeIn .3s ease;
+}
+
+.form-error {
+    background: #fdecec;
+    color: #b42318;
+    border: 1px solid #f5a3a3;
+    padding: 18px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    animation: fadeIn .3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
