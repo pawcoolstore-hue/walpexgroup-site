@@ -742,4 +742,27 @@ transform:translateY(35px) scale(1.15);
         opacity: 1;
         transform: translateY(0);
     }
+}/* Footer links */
+
+.footer-links{
+    margin-top:15px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:12px;
+    flex-wrap:wrap;
+}
+
+.footer-links a{
+    color:#fff;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.footer-links a:hover{
+    color:#d4af37;
+}
+
+.footer-links span{
+    color:#888;
 }
