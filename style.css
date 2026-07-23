@@ -331,20 +331,16 @@ footer {
         box-shadow: 0 30px 70px rgba(0, 0, 0, .45);
     }
 
- .service-icon {
-    width: 140px;
-    height: 140px;
-    margin: 0 auto 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+ .service-icon{
+    width:140px;
+    height:140px;
+    margin:0 auto 20px;
 }
 
-.service-icon img {
-    width: 130px;
-    height: 130px;
-    object-fit: contain;
-    transition: transform .3s ease;
+.service-icon img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
 }
 
 .service-card:hover .service-icon img {
