@@ -332,9 +332,24 @@ footer {
     }
 
     .service-icon {
-        font-size: 52px;
-        margin-bottom: 30px;
-    }
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-icon img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    transition: transform .3s ease;
+}
+
+.service-card:hover .service-icon img {
+    transform: scale(1.08);
+}
 
     .service-card h3 {
         font-size: 32px;
