@@ -446,12 +446,16 @@ footer {
 }
 
 .brand-card{
+    display:block;
     background:#121a2b;
     border:1px solid rgba(255,255,255,.08);
     border-radius:24px;
     padding:50px;
     text-align:center;
     transition:.35s;
+    text-decoration:none;
+    color:inherit;
+    cursor:pointer;
 }
 
 .brand-card:hover{
