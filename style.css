@@ -460,9 +460,16 @@ footer {
 }
 
 .brand-card img {
-    height: 150px;
     width: auto;
     object-fit: contain;
+}
+
+.nestori-logo {
+    height: 180px;
+}
+
+.pawcool-logo {
+    height: 150px;
 }
 
 .nestori-logo {
