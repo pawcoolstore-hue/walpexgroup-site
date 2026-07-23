@@ -456,13 +456,14 @@ footer {
     text-decoration:none;
     color:inherit;
     cursor:pointer;
+    overflow:hidden;
 }
 
 .brand-card:hover{
-    transform:translateY(-10px);
-    border-color:#D6B26E;
+    transform:translateY(-10px) scale(1.03);
+    border-color:#00d4ff;
+    box-shadow:0 25px 60px rgba(0,212,255,.25);
 }
-
 .brand-card img {
     width: auto;
     object-fit: contain;
@@ -807,4 +808,23 @@ transform:translateY(35px) scale(1.15);
 
 .footer-links span{
     color:#888;
+}
+...
+.pawcool-logo {
+    transform: scale(1.00);
+}
+
+/* ↓ ВСТАВИТЬ СЮДА ↓ */
+
+.nestori-logo,
+.pawcool-logo{
+    transition:transform .35s ease;
+}
+
+.brand-card:hover .nestori-logo{
+    transform:scale(1.38);
+}
+
+.brand-card:hover .pawcool-logo{
+    transform:scale(1.08);
 }
