@@ -846,7 +846,7 @@ transform:translateY(35px) scale(1.15);
 }
 
 .error-page h1{
-    font-size:140px;
+    font-size:120px;
     line-height:1;
     margin-bottom:15px;
     color:#00d4ff;
@@ -867,4 +867,9 @@ transform:translateY(35px) scale(1.15);
 
 .error-page .btn{
     display:inline-block;
+}
+.error-logo{
+    width:220px;
+    height:auto;
+    margin-bottom:40px;
 }
