@@ -873,3 +873,31 @@ transform:translateY(35px) scale(1.15);
     height:auto;
     margin-bottom:40px;
 }
+.company-section {
+    padding: 100px 0;
+}
+
+.company-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.company-card h3 {
+    margin-bottom: 20px;
+}
+
+.company-card p {
+    margin-bottom: 14px;
+    line-height: 1.8;
+}
+
+.company-card a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.company-card a:hover {
+    text-decoration: underline;
+}
