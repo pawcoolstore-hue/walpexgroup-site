@@ -567,14 +567,14 @@ max-width:340px;
 }
 .contact-section{
     padding:40px 0 120px;
-    background:#070b14;
+    background:transparent;
 }
 
 .contact-grid{
     display:grid;
     grid-template-columns:repeat(3,1fr);
     gap:30px;
-    margin-top:60px;
+    margin-top:30px;
 }
 
 .contact-card{
