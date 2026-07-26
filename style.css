@@ -254,7 +254,7 @@ footer {
 .glass-card{
     width:100%;
 max-width:340px;
-    min-height:170px;
+    min-height:145px;
     padding:24px 28px;
 
     display:flex;
