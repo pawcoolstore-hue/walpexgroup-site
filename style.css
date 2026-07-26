@@ -1065,3 +1065,50 @@ transform:translateY(35px) scale(1.15);
     border-color:#3b82f6;
     box-shadow:0 10px 30px rgba(59,130,246,.35);
 }
+.process{
+    padding:120px 0;
+}
+
+.process-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:28px;
+    margin-top:60px;
+}
+.process-card{
+    padding:32px;
+    border-radius:20px;
+    background:rgba(255,255,255,.03);
+    border:1px solid rgba(255,255,255,.08);
+    transition:.35s ease;
+}
+
+.process-card:hover{
+    transform:translateY(-8px);
+    border-color:rgba(59,130,246,.35);
+    box-shadow:0 20px 45px rgba(0,0,0,.25);
+}
+
+.step-number{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    width:54px;
+    height:54px;
+    margin-bottom:22px;
+    border-radius:50%;
+    background:rgba(59,130,246,.12);
+    border:1px solid rgba(59,130,246,.25);
+    color:#7dd3fc;
+    font-size:18px;
+    font-weight:700;
+}
+
+.process-card h3{
+    margin-bottom:14px;
+}
+
+.process-card p{
+    opacity:.8;
+    line-height:1.7;
+}
