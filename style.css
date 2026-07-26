@@ -956,6 +956,8 @@ transform:translateY(35px) scale(1.15);
 }
 
 .project-card{
+    position:relative;
+
     display:flex;
     flex-direction:column;
 
