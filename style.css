@@ -845,7 +845,7 @@ transform:translateY(35px) scale(1.15);
 .footer-links span{
     color:#888;
 }
-...
+
 .pawcool-logo {
     transform: scale(1.00);
 }
@@ -981,8 +981,15 @@ transform:translateY(35px) scale(1.15);
     z-index: 1;
 }
 
+.project-card{
+    transition:
+        transform .45s cubic-bezier(.22,1,.36,1),
+        box-shadow .45s ease;
+}
+
 .project-card:hover{
-    transform:translateY(-8px);
+    transform:translateY(-12px);
+    box-shadow:0 25px 60px rgba(0,0,0,.35);
 }
 
 .project-card:hover img{
@@ -994,11 +1001,19 @@ transform:translateY(35px) scale(1.15);
 }
 
 .project-card img{
-    width:100%;
-    height:280px;
-    object-fit:cover;
     display:block;
-    transition:transform .5s ease;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:transform .6s cubic-bezier(.22,1,.36,1);
+}
+
+.project-card{
+    overflow:hidden;
+}
+
+.project-card:hover img{
+    transform:scale(1.06);
 }
 .project-content{
     padding:28px;
