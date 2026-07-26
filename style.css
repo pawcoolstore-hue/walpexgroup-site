@@ -919,9 +919,35 @@ transform:translateY(35px) scale(1.15);
     border:1px solid rgba(255,255,255,.08);
     transition:.35s;
 }
+.project-card {
+    position: relative;
+}
+
+.project-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,.45),
+        rgba(0,0,0,0)
+    );
+    opacity: 0;
+    transition: .35s;
+    pointer-events: none;
+    z-index: 1;
+}
 
 .project-card:hover{
     transform:translateY(-8px);
+}
+
+.project-card:hover img{
+    transform:scale(1.06);
+}
+
+.project-card:hover::before{
+    opacity:1;
 }
 
 .project-card img{
@@ -929,6 +955,7 @@ transform:translateY(35px) scale(1.15);
     aspect-ratio:16/10;
     object-fit:cover;
     display:block;
+    transition:transform .5s ease;
 }
 
 .project-content{
