@@ -42,7 +42,8 @@ body {
 .header .container {
     display: flex;
     justify-content: space-between;
-    align-items: center
+    align-items: center;
+    gap: 40px;
 }
 
 .logo {
@@ -549,9 +550,11 @@ max-width:340px;
 }
 
 .why-card h3{
-    font-size:30px;
-    margin-bottom:20px;
-    transition: color .3s ease;
+    font-size:26px;
+    font-weight:700;
+    margin-bottom:18px;
+    line-height:1.2;
+    transition:color .3s ease;
 }
 .why-card:hover h3{
     color:#D6B26E;
