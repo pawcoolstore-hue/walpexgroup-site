@@ -750,6 +750,7 @@ transform:translateY(35px) scale(1.15);
     grid-template-columns:2fr 1fr 1fr;
     gap:70px;
     margin-bottom:60px;
+    align-items:start;
 }
 
 .footer h3{
