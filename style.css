@@ -1243,7 +1243,7 @@ transform:translateY(35px) scale(1.15);
     align-items:flex-start;
     gap:20px;
 
-    padding:12px 0;
+    padding:10px 0;
 
     border-bottom:1px solid rgba(255,255,255,.08);
 }
