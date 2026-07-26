@@ -852,7 +852,6 @@ transform:translateY(35px) scale(1.15);
 
 /* ↓ ВСТАВИТЬ СЮДА ↓ */
 
-.nestori-logo,
 .pawcool-logo{
     transition:transform .35s ease;
 }
