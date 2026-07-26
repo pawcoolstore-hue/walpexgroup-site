@@ -1001,13 +1001,21 @@ transform:translateY(35px) scale(1.15);
 .project-link{
     display:inline-flex;
     align-items:center;
-    margin-top:22px;
-    color:var(--accent);
-    font-weight:600;
+    justify-content:center;
+    margin-top:24px;
+    padding:12px 22px;
+    border-radius:50px;
+    background:rgba(59,130,246,.12);
+    border:1px solid rgba(59,130,246,.25);
+    color:#7dd3fc;
     text-decoration:none;
-    transition:.3s;
+    font-weight:600;
+    transition:.35s;
 }
-
 .project-link:hover{
-    transform:translateX(6px);
+    transform:translateY(-2px);
+    background:#3b82f6;
+    color:#fff;
+    border-color:#3b82f6;
+    box-shadow:0 10px 30px rgba(59,130,246,.35);
 }
