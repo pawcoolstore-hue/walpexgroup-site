@@ -1001,9 +1001,12 @@ transform:translateY(35px) scale(1.15);
     display:block;
     transition:transform .5s ease;
 }
-
 .project-content{
     padding:28px;
+
+    display:flex;
+    flex-direction:column;
+    height:100%;
 }
 
 .project-content h3{
@@ -1042,10 +1045,10 @@ transform:translateY(35px) scale(1.15);
     box-shadow:0 0 35px rgba(59,130,246,.18);
 }
 .project-link{
+    margin-top:auto;ы
     display:inline-flex;
     align-items:center;
     justify-content:center;
-    margin-top:24px;
     padding:12px 22px;
     border-radius:50px;
     background:rgba(59,130,246,.12);
