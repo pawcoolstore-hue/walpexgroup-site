@@ -545,6 +545,10 @@ footer {
 .why-card h3{
     font-size:30px;
     margin-bottom:20px;
+    transition: color .3s ease;
+}
+.why-card:hover h3{
+    color:#D6B26E;
 }
 
 .why-card p{
