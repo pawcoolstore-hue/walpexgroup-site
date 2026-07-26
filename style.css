@@ -533,8 +533,12 @@ max-width:340px;
     background:#121a2b;
     border:1px solid rgba(255,255,255,.08);
     border-radius:24px;
-    padding:45px;
+    padding:55px 45px;
     transition:.35s;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
 }
 
 .why-card:hover{
