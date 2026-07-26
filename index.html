@@ -74,7 +74,7 @@ gtag('config', 'G-823E3BLN24');
 </nav>
 </div>
 </header>
-<section class="hero">
+<section class="hero reveal">
     <div class="container">
 
         <div class="hero-left">
@@ -122,7 +122,7 @@ Drive Growth
     </div>
 </section>
 
-<section class="services" id="services">
+<section class="services reveal" id="services">
 
     <div class="container">
 
@@ -190,7 +190,7 @@ Drive Growth
 
 </section>
 
-<section class="about-section" id="about">
+<section class="about-section reveal" id="about">
 
     <div class="container about-grid">
 
@@ -244,7 +244,7 @@ Drive Growth
 
 </section>
 
-<section class="why-section">
+<section class="why-section reveal">
 
     <div class="container">
 
@@ -280,7 +280,7 @@ Drive Growth
     </div>
 
 </section>
-<section id="process" class="process">
+<section id="process" class="process reveal">
 
     <div class="container">
 
@@ -321,7 +321,7 @@ Drive Growth
     </div>
 
 </section>
-<section id="projects" class="projects">
+<section id="projects" class="projects reveal">
     <div class="container">
 
         <div class="section-header">
@@ -531,7 +531,7 @@ Drive Growth
 
 
 
-<section class="contact-section" id="contact">
+<section class="contact-section reveal" id="contact">
 
     <div class="container contact-grid">
 
@@ -624,7 +624,7 @@ Drive Growth
 
 </section>
 
-<footer class="footer">
+<footer class="footer reveal">
 
     <div class="container footer-grid">
 
@@ -729,6 +729,21 @@ form.addEventListener("submit", async (e) => {
 </script>
 
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+<script>
+const observer = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add("active");
+        }
+    });
+},{
+    threshold:0.15
+});
+
+document.querySelectorAll(".reveal").forEach(el=>{
+    observer.observe(el);
+});
+</script>
 
 </body>
 </html>
