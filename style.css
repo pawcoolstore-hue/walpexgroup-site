@@ -1268,11 +1268,11 @@ transform:translateY(35px) scale(1.15);
 .footer-brand{
     display:flex;
     flex-direction:column;
-    gap:18px;
+    gap:12px;
 }
 
 .footer-logo{
-    width:180px;
+    width:200px;
     height:auto;
     opacity:.95;
 }
