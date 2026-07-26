@@ -1264,3 +1264,20 @@ transform:translateY(35px) scale(1.15);
     font-weight:500;
     color:#fff;
 }
+.footer-brand{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.footer-logo{
+    width:180px;
+    height:auto;
+    opacity:.95;
+}
+
+.footer-brand p{
+    max-width:280px;
+    line-height:1.7;
+    color:rgba(255,255,255,.7);
+}
